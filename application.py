@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request
 import pickle
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 # Import Standard Scaler and Ridge Regression models
 ridge_model = pickle.load(open('models/ridge.pkl', 'rb'))
